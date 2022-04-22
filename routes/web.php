@@ -25,3 +25,10 @@ Route::get('create-partner',[\App\Http\Controllers\FrontController::class,'creat
 
 Route::post('store-partner',[\App\Http\Controllers\PartnerController::class,'storePartner'])->name('store-partner');
 
+Route::get('vote-up-partner/{id}',[\App\Http\Controllers\PartnerController::class,'voteUpPartner'])->name('vote-up-partner');
+
+Route::get('vote-down-partner/{id}',[\App\Http\Controllers\PartnerController::class,'voteDownPartner'])->name('vote-down-partner');
+
+Route::get('add-picture/{partnerId}',[\App\Http\Controllers\PictureController::class,'addPicture'])->name('add-picture');
+
+Route::delete('delete-partner/{id}',[\App\Http\Controllers\PartnerController::class,'delete'])->name('delete-partner');

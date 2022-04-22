@@ -18,7 +18,9 @@ return new class extends Migration
             $table->string("name");
             $table->text("description");
             $table->string("address");
+            $table->string("cp");
             $table->string("city");
+            $table->integer("votes");
             $table->unsignedBigInteger("picture_id")->nullable();
         });
     }

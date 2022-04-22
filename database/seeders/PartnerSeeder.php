@@ -19,22 +19,28 @@ class PartnerSeeder extends Seeder
             'id' => 1,
             'name' => "Toufick",
             'description' => "Le partner de toufick",
-            'address' => "5 impasse des petits chats, 85475",
+            'address' => "5 impasse des petits chats",
+            'cp'=>"85475",
             'city' => "Gotham",
+            'votes' => 2,
         ]);
         DB::table('partners')->insert([
             'id' => 2,
             'name' => "Petit Toufick",
             'description' => "Le partner de petit toufick",
-            'address' => "5 impasse des petits chats, 85475",
+            'address' => "5 impasse des petits chats",
+            'cp'=>"85475",
             'city' => "Gotham",
+            'votes' => 12,
         ]);
         DB::table('partners')->insert([
             'id' => 3,
-            'name' => "Soueur Toufick",
+            'name' => "Soeur Toufick",
             'description' => "Le partner de soueur toufick",
-            'address' => "12 avenue des singes, 27458",
+            'address' => "12 avenue des singes",
+            'cp'=>"27458",
             'city' => "Montcuq",
+            'votes' => 5,
         ]);
     }
 }

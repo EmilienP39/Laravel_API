@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Models\Partner;
+use App\Http\Controllers\PartnerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('partners',[\App\Http\Controllers\PartnerController::class, 'indexApi']);
+Route::get('partner/{id}',[PartnerController::class,'getOneApi']);
+Route::get('partner-up/{id}',[PartnerController::class,'voteUpPartner']);
+Route::get('partner-down/{id}',[PartnerController::class,'voteDownPartner']);
