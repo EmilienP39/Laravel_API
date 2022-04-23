@@ -14,7 +14,7 @@
 
                     <div>
                         <label for="description">Description</label><br>
-                        <textarea name="description"></textarea>
+                        <textarea name="description" style="width: 213px"></textarea>
                     </div>
                 </div>
                 <div class="create-row">
@@ -115,5 +115,4 @@
             <br>
         @endforeach
     </div>
-
 @endsection
